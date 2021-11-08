@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+
+.hero {
+  width: 100%;
+  height: 100%;
+
+  .container {
+    &.content-wrapper {
+      @include bp(tablet) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.image-container {
+  height: 412px;
+  border-bottom-left-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+
+  @include bp(tablet) {
+    height: 450px;
+    border-radius: 0px 225px 225px 0px;
+  }
+
+  @include bp(desktop-1920) {
+    height: 500px;
+  }
+}
+
+.text-container {
+  @include bp(tablet) {
+    margin-left: $space-unit--s;
+    margin-right: $space-unit--lg;
+    padding-right: 0;
+  }
+
+  @include bp($mobile__bp) {
+    max-width: calc((1152px / 2) - (#{$space-unit--lg} + #{$space-unit--s}));
+  }
+
+  @include bp(bulma-fullhd) {
+    max-width: calc((1344px / 2) - (#{$space-unit--lg} + #{$space-unit--s}));
+  }
+
+  @include bp(desktop-1920) {
+    max-width: calc((1344px / 2) - (#{$space-unit--xxl} + #{$space-unit--s}));
+  }
+}

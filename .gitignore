@@ -33,7 +33,7 @@ plugins/*
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
-!themes/positec-pharmacy/
+!themes/health-theme/
 
 # Ignore packages #
 # =============== #
@@ -48,8 +48,8 @@ themes/*
 
 # Ignore npm packages #
 # =================== #
-themes/positec-pharmacy/node_modules/*
+themes/health-theme/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/positec-pharmacy/build/*
+themes/health-theme/build/*

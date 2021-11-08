@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.button {
+  width: 225px;
+  height: 50px;
+  border-radius: 0;
+  font-family: $font__accent;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: $font__weight-semibold;
+}
+
+.button.is-light {
+  background: $color__light;
+  color: $color__primary;
+}
+
+.button.is-success,
+.button.is-success:active,
+.button.is-success:focus {
+  background: $color__success;
+  color: $color__primary;
+}
+
+.button.is-success:hover {
+  background: $color__primary-invert;
+  color: $color__light;
+}
+
+// Menu Buttons -----------------------------
+.desktop-menu-btn {
+  a,
+  a:visited {
+    background: $color__success-dark;
+    color: $color__light !important;
+    width: 130px;
+    height: 33px;
+    @include col-cen();
+    border-radius: 3px;
+    box-shadow: $box-shadow--btn;
+  }
+
+  a:hover {
+    background: $color__success;
+  }
+}

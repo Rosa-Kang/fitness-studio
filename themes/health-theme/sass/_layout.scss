@@ -1,0 +1,150 @@
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+// Backgrounds (use Bulma has-background-color) --------------------
+.bg-light-bis {
+  background: $color__light-bis;
+}
+
+/*.bg-success-dark {
+  background: $color__success-dark;
+}
+*/
+
+// Containers ------------------
+.container-sm {
+  margin: 0 auto;
+  max-width: $container-width--sm;
+}
+
+.container-m {
+  margin: 0 auto;
+  max-width: $container-width--m;
+}
+
+.content-wrapper {
+  padding: $base__space-unit;
+}
+
+.content-wrapper {
+  @include bp(tablet) {
+    padding: $space-unit--lg;
+  }
+
+  @include bp(desktop-1920) {
+    padding: $space-unit--xxl;
+  }
+}
+
+.fixed-header {
+  margin-top: $mobile__menu-height;
+
+  @include bp($mobile__menu-bp) {
+    margin-top: $desktop__menu-height;
+  }
+}
+
+// Helpers -----------------------
+.mobile-wrapper {
+  @include bp($mobile__menu-bp) {
+    display: none;
+  }
+}
+
+.desktop-wrapper {
+  display: none;
+
+  @include bp($mobile__menu-bp) {
+    display: block;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+ul.list-style-none {
+  list-style: none !important;
+  margin: 0 !important;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -$mobile__menu-height;
+  visibility: hidden;
+
+  @include bp($mobile__menu-bp) {
+    top: -$desktop__menu-height;
+  }
+}
+
+// FAQ Accordion -----------------------
+.schema-faq-section {
+  background-color: $color__success;
+  color: $color__primary-dark;
+  margin-bottom: 15px;
+}
+
+.schema-faq-question {
+  display: block;
+  font-family: $font__accent;
+  font-size: 25px;
+  padding: 18px 35px 17px 35px;
+}
+
+.faq-closed {
+  &::after {
+    content: '+';
+    position: absolute;
+    right: 10%;
+  }
+
+  &:hover {
+    background-color: $color__success-light;
+    cursor: pointer;
+  }
+}
+
+.faq-opened {
+  &::after {
+    content: '–';
+    position: absolute;
+    right: 10%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.schema-faq-answer {
+  padding: 5px 35px 45px;
+}
+
+/* Source: https://a11y-101.com/development/skip-link */
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visually-hidden:focus {
+  clip: auto;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  width: auto;
+}
