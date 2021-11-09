@@ -14,8 +14,6 @@
     <div class="column is-full-mobile">
       <h3>Subscribe To Our Newsletter</h3>
       <form action="#">
-        <input type="text" name="name">
-        <input type="text" name="e-mail">
       </form>
     </div>
     <div class="column is-full-mobile">

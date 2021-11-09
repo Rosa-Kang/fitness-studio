@@ -1,0 +1,23 @@
+.symmetric-body {
+  .desc-container {
+    height: 412px;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+
+    @include bp(tablet) {
+      height: 350px;
+      border-radius: 0px 225px 225px 0px;
+    }
+
+    @include bp(desktop-1920) {
+      height: 500px;
+    }
+  }
+
+  h1 {
+    color: $color__dark;
+  }
+  img {
+    height: 350px;
+  }
+}

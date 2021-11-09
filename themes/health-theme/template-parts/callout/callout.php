@@ -22,7 +22,9 @@ $background_color = get_field('background_color');
     <h3 class="is-uppercase"><?php echo $subtitle ?></h3>
     <h2><?php echo $title ?></h2>
     <p><?php echo $content ?></p>
-    <a class="button is-uppercase" href="<?php echo $button_link ?>">
+    <a class="button is-uppercase <?php if ($background_color == 'light') {
+                                    echo 'button is-primary';
+                                  }; ?>" href="<?php echo $button_link ?>">
       <?php echo $button_label ?>
     </a>
   </div>

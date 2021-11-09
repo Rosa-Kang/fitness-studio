@@ -22,11 +22,11 @@ $space-unit--xxs: $base__space-unit/3; // 0.5rem
 // Custom Colors -----------------------------------
 // TODO: Add custom colors and comment out unused ones here and in bulma-custom.scss
 $color__light: #ffffff;
-$color__light-bis: tan;
+$color__light-bis: #ddd7c9; //bright symmetric section
 $color__dark: #2c3638; //dark - menu font
 $color__primary: #3f4e51; // dark turquoise
 $color__primary-light: $color__light;
-$color__primary-invert: #3f4e51; //same as primary for footer input
+$color__primary-invert: #ffffff; //same as primary for footer input
 $color__primary-dark: #2c3638;
 /*** SECONDARY ***/
 $color__success: #ddd7c9; // h1 font color

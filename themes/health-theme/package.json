@@ -1,8 +1,8 @@
 {
-  "name": "positecpharmacy",
+  "name": "fitnessstudio",
   "version": "1.0.0",
   "private": true,
-  "description": "A custom theme for POSitec Pharmacy, based on Underscores.",
+  "description": "A custom theme for Fitness Studio, based on Underscores.",
   "dependencies": {
     "bulma": "^0.9.1"
   },
