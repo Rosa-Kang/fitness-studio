@@ -12,7 +12,7 @@
 <footer id="colophon" class="site-footer has-background-primary" role="contentinfo">
   <div class="columns">
     <div class="column is-full-mobile">
-      <h3>Subscribe To Our Newsletter</h3>
+      <h3 class="pl-6 is-capitalized">Subscribe To Our Newsletter</h3>
       <form action="#">
       </form>
     </div>

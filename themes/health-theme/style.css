@@ -8141,7 +8141,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: "Expo Serif Pro", serif !important; }
 
 .is-family-sans-serif {
-  font-family: "Open Sans", sans-serif !important; }
+  font-family: "Expo Serif Pro", serif !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -9413,7 +9413,7 @@ big {
 h1,
 h2,
 h3 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Expo Serif Pro", serif;
   font-style: normal;
   font-weight: 400; }
 
@@ -9518,7 +9518,7 @@ li {
   text-align: center;
   margin-bottom: 1.5rem; }
   .single-post .wp-block-quote p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Expo Serif Pro", serif;
     font-size: 20px;
     line-height: 1.5;
     color: #3f4e51; }
@@ -9652,7 +9652,7 @@ ol {
   margin: 1.005rem 0 1.5rem 1.2rem; }
 
 ul {
-  list-style: disc; }
+  list-style-type: none; }
 
 ol {
   list-style: decimal; }

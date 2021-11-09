@@ -17,19 +17,23 @@ get_header(); ?>
 
     <?php get_template_part('template-parts/hero/hero'); ?>
 
-    <?php if (have_posts()) : ?>
+    <?php if (have_posts()) :
+      while (have_posts()) : the_post(); ?>
 
     <section class="blog-container">
       <div class="container content-wrapper">
-
+        <h4><?php echo get_the_title(); ?></h4>
       </div>
     </section>
+    <?php endwhile;
 
-    <?php else : ?>
+    else :
+      echo '<p data-aos="fade-up">No content found</p>';
 
+    endif;
+
+    ?>
     <?php get_template_part('template-parts/content/content', 'none'); ?>
-
-    <?php endif; ?>
 
   </main><!-- #main -->
 </div><!-- #primary -->
