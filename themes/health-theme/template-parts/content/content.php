@@ -16,9 +16,6 @@ $title = get_the_title();
 $content = custom_excerpt(30);
 $date = get_the_date('F j, Y');
 ?>
-
-<?php if (have_posts()) :
-  while (have_posts()) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('column is-full is-6-tablet is-4-desktop mt-5'); ?>>
   <div class="card is-shadowless w-100">
     <div class="card-image pb-0">
@@ -41,13 +38,4 @@ $date = get_the_date('F j, Y');
 
     </div>
   </div>
-</article>
-<?php endwhile;
-
-else :
-  echo '<p data-aos="fade-up">No content found</p>';
-
-endif;
-
-?>
-<!-- #post-## -->
+</article><!-- #post-## -->

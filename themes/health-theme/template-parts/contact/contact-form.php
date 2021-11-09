@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template part for displaying contact form.
  *
@@ -12,6 +13,6 @@
 ?>
 <section class="contact-form">
   <div class="container content-wrapper">
-    
+
   </div>
 </section><!-- .contact-form -->
