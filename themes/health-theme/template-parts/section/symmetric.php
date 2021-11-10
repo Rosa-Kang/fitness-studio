@@ -14,11 +14,18 @@ $image = get_field('sm_image');
 $text = get_field('sm_text');
 $button_label = get_field('sm_button_label');
 $button_link = get_field('sm_button_link');
+$illust = get_field('sm_illust');
 
 if ($image) {
   $image_url = $image['url'];
   $image_alt = $image['alt'];
 }
+
+if ($illust) {
+  $illustration_url = $illust['url'];
+  $illustration_alt = $illust['alt'];
+}
+
 ?>
 <section class="symmetric">
   <div class="symmetric-body p-0">
@@ -39,6 +46,9 @@ if ($image) {
       </div>
       <div class="column is-4-desktop">
         <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
+      </div>
+      <div class="symmetric-illustration">
+        <img src="<?php echo $illustration_url; ?>" alt="<?php echo $illustration_alt; ?>">
       </div>
     </div>
   </div>

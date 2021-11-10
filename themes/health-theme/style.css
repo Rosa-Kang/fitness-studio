@@ -8141,7 +8141,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: "Expo Serif Pro", serif !important; }
 
 .is-family-sans-serif {
-  font-family: "Open Sans", sans-serif !important; }
+  font-family: "Expo Serif Pro", serif !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -9413,7 +9413,7 @@ big {
 h1,
 h2,
 h3 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Expo Serif Pro", serif;
   font-style: normal;
   font-weight: 400; }
 
@@ -9508,17 +9508,21 @@ li {
   line-height: 2.5; }
 
 .hero p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.2px;
+  margin-bottom: 110px;
   font-weight: 500;
   color: #ffffff; }
+  @media (min-width: 768px) {
+    .hero p {
+      margin-bottom: 1rem; } }
 
 .single-post .wp-block-quote {
   text-align: center;
   margin-bottom: 1.5rem; }
   .single-post .wp-block-quote p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Expo Serif Pro", serif;
     font-size: 20px;
     line-height: 1.5;
     color: #3f4e51; }
@@ -9652,7 +9656,7 @@ ol {
   margin: 1.005rem 0 1.5rem 1.2rem; }
 
 ul {
-  list-style: disc; }
+  list-style-type: none; }
 
 ol {
   list-style: decimal; }
@@ -10693,6 +10697,21 @@ li.menu-item-has-children {
     .hero .container.content-wrapper {
       max-width: 100%; } }
 
+.hero-illustration {
+  position: absolute;
+  right: 0%;
+  bottom: -20%; }
+  @media (min-width: 768px) {
+    .hero-illustration {
+      right: 1%;
+      bottom: -59%; } }
+  @media (min-width: 1280px) {
+    .hero-illustration {
+      right: 5%; } }
+
+.column.is-5-desktop.is-6-widescreen {
+  position: relative; }
+
 .image-container {
   height: 412px;
   border-bottom-left-radius: 50% 50%;
@@ -10730,8 +10749,19 @@ li.menu-item-has-children {
 # Slider
 --------------------------------------------------------------*/
 /* SwiperJS - Custom */
+.symmetric-body .symmetric-illustration {
+  position: absolute;
+  left: 54%;
+  bottom: -14%; }
+
+.symmetric-body .columns.is-vcentered {
+  position: relative; }
+
+.symmetric-body .symmetric-illustration img {
+  height: 186px; }
+
 .symmetric-body .desc-container {
-  height: 412px;
+  max-height: 350px;
   border-bottom-left-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%; }
   @media (min-width: 768px) {
@@ -10747,3 +10777,6 @@ li.menu-item-has-children {
 
 .symmetric-body img {
   height: 350px; }
+
+.background-pre {
+  background-color: #f5f4f2; }

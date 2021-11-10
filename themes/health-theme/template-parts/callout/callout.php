@@ -18,8 +18,8 @@ $button_label = get_field('callout_button_label');
 $background_color = get_field('background_color');
 ?>
 <section class="callout py-6 px-6 <?php echo $background_color; ?>">
-  <div class="container-sm callout-wrapper has-text-centered">
-    <h3 class="is-uppercase"><?php echo $subtitle ?></h3>
+  <div class="container-sm pt-4 callout-wrapper has-text-centered">
+    <h4 class="is-uppercase"><?php echo $subtitle ?></h4>
     <h2><?php echo $title ?></h2>
     <p><?php echo $content ?></p>
     <a class="button is-uppercase <?php if ($background_color == 'light') {

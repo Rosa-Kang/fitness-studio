@@ -200,11 +200,15 @@ li {
 
 .hero {
   p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.2px;
+    margin-bottom: 110px;
     font-weight: $font__weight-medium;
     color: $color__light;
+    @include bp(tablet) {
+      margin-bottom: 1rem;
+    }
   }
 }
 

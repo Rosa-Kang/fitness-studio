@@ -14,7 +14,7 @@ $services_title = get_field('services_title');
 $services = get_field('services');
 ?>
 
-<section class="service container py-6 px-6">
+<section class="background-pre service container py-6 px-6">
   <div class="service-wrapper has-text-centered">
     <h2 class="is-capitalized"><?php echo $services_title ?></h2>
     <div class="columns px-6">
@@ -40,7 +40,7 @@ $services = get_field('services');
         <img src="<?php echo $icon_url ?>" alt="<?php echo $icon_alt ?>">
         <h3 class="is-capitalized pb-4"><?php echo $subtitle ?></h3>
         <p><?php echo $info ?></p>
-        <a class="is-uppercase py-1 px-2"><?php echo $button_text ?></a>
+        <a class="button is-primary is-uppercase py-1 px-2"><?php echo $button_text ?></a>
       </div>
       <?php
         // End loop.

@@ -1,6 +1,18 @@
 .symmetric-body {
+  .symmetric-illustration {
+    position: absolute;
+    left: 54%;
+    bottom: -14%;
+  }
+  .columns.is-vcentered {
+    position: relative;
+  }
+  .symmetric-illustration img {
+    height: 186px;
+  }
+
   .desc-container {
-    height: 412px;
+    max-height: 350px;
     border-bottom-left-radius: 50% 50%;
     border-bottom-right-radius: 50% 50%;
 
