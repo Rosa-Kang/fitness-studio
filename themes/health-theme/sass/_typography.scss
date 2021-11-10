@@ -111,14 +111,15 @@ h1 {
 
 h2,
 .content h2 {
+  font-family: $font__accent;
   color: $color__primary;
-  font-size: 33px;
-  line-height: 41px;
-  font-weight: $font__weight-normal;
+  font-size: 35px;
+  line-height: 44px;
+  font-weight: $font__weight-semibold;
 
   @include bp($mobile__bp) {
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 
@@ -152,11 +153,20 @@ h2.is-family-secondary {
 h3,
 .content h3,
 .numeric-pagination li a {
+  font-family: $font__accent;
   color: $color__primary;
   font-size: 25px;
-  line-height: 34px;
+  line-height: 30px;
   font-weight: $font__weight-normal;
   text-transform: lowercase;
+}
+
+h3.subtitle {
+  font-family: $font__accent;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color__info;
+  font-weight: $font__weight-semibold;
 }
 
 h3.is-family-secondary {
@@ -169,6 +179,14 @@ h3.is-family-secondary {
     font-size: 66px;
     letter-spacing: 0;
   }
+}
+
+h4 {
+  font-family: $font__main;
+  font-weight: $font__weight-bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 4px 0;
 }
 
 .entry-meta {
@@ -197,7 +215,14 @@ li {
 li {
   line-height: 2.5;
 }
-
+.specialties {
+  li {
+    line-height: 2;
+    font-family: $font__pre;
+    font-size: 18px;
+    font-weight: $font__weight-medium;
+  }
+}
 .hero {
   p {
     font-size: 16px;
@@ -210,6 +235,14 @@ li {
       margin-bottom: 1rem;
     }
   }
+}
+
+p.instructors-name {
+  font-family: $font__accent;
+  font-size: 22px;
+  line-height: 27px;
+  color: $color__info;
+  font-weight: $font__weight-semibold;
 }
 
 // Single Posts -----------------------------------

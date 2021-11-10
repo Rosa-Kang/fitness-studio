@@ -17,8 +17,8 @@ $button_link = get_field('callout_button_link');
 $button_label = get_field('callout_button_label');
 $background_color = get_field('background_color');
 ?>
-<section class="callout py-6 px-6 <?php echo $background_color; ?>">
-  <div class="container-sm pt-4 callout-wrapper has-text-centered">
+<section class="callout py-6 px-5 <?php echo $background_color; ?>">
+  <div class="container-sm pt-4 pb-6 callout-wrapper has-text-centered">
     <h4 class="is-uppercase"><?php echo $subtitle ?></h4>
     <h2><?php echo $title ?></h2>
     <p><?php echo $content ?></p>

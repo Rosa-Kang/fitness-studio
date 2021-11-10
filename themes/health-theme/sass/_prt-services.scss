@@ -1,3 +1,19 @@
-.background-pre {
+.services.background-pre {
   background-color: $color__background-pre;
+
+  .service-wrapper {
+    @include bp($mobile__bp) {
+      max-width: 1152px;
+      margin: 0 auto;
+    }
+  }
+
+  #services-icon {
+    width: 84px;
+    height: 80px;
+  }
+  .services-info {
+    padding: 0 3rem;
+    margin: 0;
+  }
 }

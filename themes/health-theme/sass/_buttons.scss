@@ -10,8 +10,17 @@
   font-size: 20px;
   line-height: 25px;
   text-transform: uppercase;
+  margin-top: 26px;
   letter-spacing: 2px;
   font-weight: $font__weight-semibold;
+}
+.button.is-primary {
+  background-color: $color__primary;
+
+  &:hover {
+    background-color: $color__info;
+    color: #ffffff;
+  }
 }
 
 .button.is-light {
