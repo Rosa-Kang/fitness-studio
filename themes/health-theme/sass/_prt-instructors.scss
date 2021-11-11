@@ -2,7 +2,16 @@
 # Instructors
 --------------------------------------------------------------*/
 .instructors {
+  @include bp($mobile__bp) {
+    max-width: 900px;
+    margin: 0 auto;
+  }
   .profile {
     width: 150px;
+  }
+  .image {
+    img {
+      margin: 0 auto;
+    }
   }
 }

@@ -123,13 +123,13 @@ h2,
   }
 }
 
-h2.is-family-secondary {
-  font-size: 60px;
-  line-height: 1;
-
+h2.symmetric-headline {
+  width: 225px;
+  text-align: left;
+  margin: 0 auto;
   @include bp($mobile__bp) {
-    font-size: 70px;
-    line-height: 84px;
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 
@@ -243,6 +243,12 @@ p.instructors-name {
   line-height: 27px;
   color: $color__info;
   font-weight: $font__weight-semibold;
+}
+
+p.symmetric-p {
+  text-align: left;
+  margin: 0 auto;
+  width: 225px;
 }
 
 // Single Posts -----------------------------------

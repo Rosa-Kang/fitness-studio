@@ -28,15 +28,21 @@ if ($illust) {
 
 ?>
 <section class="symmetric">
-  <div class="symmetric-body p-0">
-    <div class="columns is-vcentered">
-      <div class="column is-8-desktop pr-5">
+  <div class="symmetric-body px-5 pb-6">
+    <div class="columns is-vcentered is-full-mobile has-text-centered">
+      <div class="column is-4-desktop">
+        <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
+        <div class="symmetric-illustration">
+          <img class="symmetric-illust" src="<?php echo $illustration_url; ?>" alt="<?php echo $illustration_alt; ?>">
+        </div>
+      </div>
+      <div class="column is-8-desktop">
         <div class="columns desc-container bg-light-bis content-wrapper">
-          <div class="column is-4"></div>
-          <div class="column is-8">
-            <h1 class="mt-0"><?php echo $title; ?></h1>
-            <p><?php echo $text; ?> </p>
-            <div class="button-container mb-3 has-text-centered has-text-left-tablet">
+          <div class="column is-4-desktop"></div>
+          <div class="column is-8-desktop">
+            <h2 class="symmetric-headline mb-4"><?php echo $title; ?></h2>
+            <p class="symmetric-p"><?php echo $text; ?> </p>
+            <div class="button-container  has-text-centered has-text-left-tablet">
               <a class="button is-primary" href="<?php echo $button_link; ?>">
                 <?php echo $button_label; ?>
               </a>
@@ -44,12 +50,7 @@ if ($illust) {
           </div>
         </div>
       </div>
-      <div class="column is-4-desktop">
-        <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
-      </div>
-      <div class="symmetric-illustration">
-        <img src="<?php echo $illustration_url; ?>" alt="<?php echo $illustration_alt; ?>">
-      </div>
+
     </div>
   </div>
 </section><!-- .symmetric -->

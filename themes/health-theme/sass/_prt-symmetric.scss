@@ -1,35 +1,42 @@
 .symmetric-body {
-  .symmetric-illustration {
-    position: absolute;
-    left: 54%;
-    bottom: -14%;
-  }
   .columns.is-vcentered {
-    position: relative;
-  }
-  .symmetric-illustration img {
-    height: 186px;
-  }
+    .column.is-4-desktop {
+      position: relative;
+      .symmetric-illustration {
+        position: absolute;
+        bottom: -22%;
+        left: -24%;
+        .symmetric-illust {
+          width: 186px;
+          height: auto;
+        }
+      }
+    }
+    .symmetric-illustration img {
+      height: 186px;
+    }
 
-  .desc-container {
-    max-height: 350px;
-    border-bottom-left-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
+    .desc-container {
+      max-height: 420px;
+      border-top-left-radius: 50% 50%;
+      border-top-right-radius: 50% 50%;
 
-    @include bp(tablet) {
+      @include bp(tablet) {
+        height: 350px;
+        border-radius: 0px 225px 225px 0px;
+      }
+
+      @include bp(desktop-1920) {
+        height: 500px;
+      }
+    }
+
+    h1 {
+      color: $color__dark;
+    }
+    img {
       height: 350px;
-      border-radius: 0px 225px 225px 0px;
+      object-fit: cover;
     }
-
-    @include bp(desktop-1920) {
-      height: 500px;
-    }
-  }
-
-  h1 {
-    color: $color__dark;
-  }
-  img {
-    height: 350px;
   }
 }

@@ -17,7 +17,7 @@ $instructor_deco = get_field('instructor_deco');
   <div class="instructor container content-wrapper has-text-centered">
     <img src="<?php echo $instructor_deco['url'] ?>" alt="<?php echo $instructor_deco['alt'] ?>">
     <h2 class="is-capitalized"><?php echo $instructor_title ?></h2>
-    <div class="columns py-4">
+    <div class="columns py-4 is-flex is-multiline">
       <?php
       // Check rows exists.
       if (have_rows('instructor_content')) :
@@ -30,11 +30,11 @@ $instructor_deco = get_field('instructor_deco');
           $name = get_sub_field('instructor_name');
           // Do something...
       ?>
-      <div class="column">
+      <div class="column py-4 is-6-mobile">
         <div class="image">
           <img class="is-rounded profile" src="<?php echo $icon_url ?>" alt="<?php echo $icon_alt ?>">
         </div>
-        <p class="instructors-name mb-3"><?php echo $name ?></p>
+        <p class="instructors-name mt-3 mb-4"><?php echo $name ?></p>
         <ul class='m-0 specialties'>
           <?php
               // Check rows exists.
