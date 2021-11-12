@@ -9,6 +9,7 @@
 ?>
 
 <?php
+$orientation = get_field('sm_orientation');
 $title = get_field('sm_title');
 $image = get_field('sm_image');
 $text = get_field('sm_text');
@@ -27,19 +28,36 @@ if ($illust) {
 }
 
 ?>
-<section class="symmetric">
-  <div class="symmetric-body px-5 pb-6">
-    <div class="columns is-vcentered is-full-mobile has-text-centered">
-      <div class="column is-4-desktop">
+<section class="symmetric <?php echo $orientation; ?>">
+  <div class="symmetric-body pb-6">
+    <div class="columns is-vcentered is-full-mobile has-text-centered is-flex">
+      <div class="column is-5-tablet is-4-desktop
+      <?php if ($orientation == 'right-oval') {
+        echo 'order-two';
+      } else {
+        echo 'order-one';
+      } ?>">
         <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
-        <div class="symmetric-illustration">
-          <img class="symmetric-illust" src="<?php echo $illustration_url; ?>" alt="<?php echo $illustration_alt; ?>">
-        </div>
       </div>
-      <div class="column is-8-desktop">
-        <div class="columns desc-container bg-light-bis content-wrapper">
-          <div class="column is-4-desktop"></div>
-          <div class="column is-8-desktop">
+      <div class="column is-vcentered is-7-tablet is-8-desktop <?php if ($orientation == 'right-oval') {
+                                                                  echo 'order-one';
+                                                                } else {
+                                                                  echo 'order-two';
+                                                                } ?>">
+        <div class="symmetric-higher columns desc-container bg-light-bis content-wrapper">
+          <div class="symmetric-illustration">
+            <img class="symmetric-illust" src="<?php echo $illustration_url; ?>" alt="<?php echo $illustration_alt; ?>">
+          </div>
+          <div class="column is-0-tablet is-4-desktop <?php if ($orientation == 'right-oval') {
+                                                        echo 'order-one';
+                                                      } else {
+                                                        echo 'order-two';
+                                                      } ?>"></div>
+          <div class="column is-12-tablet is-8-desktop <?php if ($orientation == 'right-oval') {
+                                                          echo 'order-two';
+                                                        } else {
+                                                          echo 'order-one';
+                                                        } ?>">
             <h2 class="symmetric-headline mb-4"><?php echo $title; ?></h2>
             <p class="symmetric-p"><?php echo $text; ?> </p>
             <div class="button-container  has-text-centered has-text-left-tablet">

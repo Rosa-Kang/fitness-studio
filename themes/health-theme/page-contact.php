@@ -10,6 +10,8 @@
 get_header(); ?>
 
 <?php get_template_part('template-parts/hero/hero'); ?>
+<?php get_template_part('template-parts/contact/contact-business'); ?>
+<?php get_template_part('template-parts/contact/contact-form'); ?>
 <?php get_template_part('template-parts/section/symmetric'); ?>
 
 <?php get_footer(); ?>

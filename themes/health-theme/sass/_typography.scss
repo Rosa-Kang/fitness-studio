@@ -127,9 +127,15 @@ h2.symmetric-headline {
   width: 225px;
   text-align: left;
   margin: 0 auto;
+  @include bp(tablet) {
+    margin: 0 0 16px 0;
+  }
   @include bp($mobile__bp) {
     font-size: 40px;
     line-height: 50px;
+  }
+  @include bp(desktop-1024) {
+    width: 100%;
   }
 }
 
@@ -249,8 +255,21 @@ p.symmetric-p {
   text-align: left;
   margin: 0 auto;
   width: 225px;
+  @include bp(tablet) {
+    margin: 0;
+  }
+  @include bp(desktop-1024) {
+    width: 100%;
+  }
 }
 
+p.blog-excerpt {
+  @include bp(tablet) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 99px;
+  }
+}
 // Single Posts -----------------------------------
 .single-post {
   .wp-block-quote {

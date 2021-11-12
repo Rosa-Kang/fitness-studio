@@ -1,33 +1,84 @@
 .symmetric-body {
+  .button {
+    @include bp(tablet) {
+      margin: 10px 0 0 0;
+    }
+    @include bp(desktop-1024) {
+      margin: 55px 0 0 0;
+    }
+  }
   .columns.is-vcentered {
-    .column.is-4-desktop {
+    flex-direction: column;
+    .order-one {
+      order: 2;
+    }
+    .order-two {
+      order: 1;
+    }
+    @include bp(tablet) {
+      flex-direction: row;
+      .order-one {
+        order: 1;
+      }
+      .order-two {
+        order: 2;
+      }
+    }
+    .symmetric-higher {
       position: relative;
       .symmetric-illustration {
         position: absolute;
-        bottom: -22%;
-        left: -24%;
+        top: -18%;
+        left: -19%;
+        @include bp(tablet) {
+          top: 67%;
+          left: 67%;
+        }
+
         .symmetric-illust {
           width: 186px;
           height: auto;
         }
       }
     }
-    .symmetric-illustration img {
-      height: 186px;
+
+    .order-one {
+      .desc-container {
+        max-height: 420px;
+        max-width: 400px;
+        margin: 0 auto;
+        border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%;
+
+        @include bp(tablet) {
+          height: 350px;
+          max-width: unset;
+          border-radius: 0px 225px 225px 0px;
+        }
+
+        @include bp(desktop-1920) {
+          height: 500px;
+        }
+      }
     }
 
-    .desc-container {
-      max-height: 420px;
-      border-top-left-radius: 50% 50%;
-      border-top-right-radius: 50% 50%;
+    .order-two {
+      .desc-container {
+        max-height: 420px;
+        max-width: 400px;
+        margin: 0 auto;
+        border-bottom-left-radius: 50% 50%;
+        border-bottom-right-radius: 50% 50%;
 
-      @include bp(tablet) {
-        height: 350px;
-        border-radius: 0px 225px 225px 0px;
-      }
+        @include bp(tablet) {
+          height: 350px;
+          max-width: unset;
+          border-radius: 225px 0px 0px 225px;
+        }
 
-      @include bp(desktop-1920) {
-        height: 500px;
+        @include bp(desktop-1920) {
+          height: 500px;
+        }
       }
     }
 

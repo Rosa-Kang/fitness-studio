@@ -7,4 +7,11 @@
       margin: 0 auto;
     }
   }
+  .blog-info {
+    text-align: center;
+
+    @include bp(tablet) {
+      text-align: left;
+    }
+  }
 }
