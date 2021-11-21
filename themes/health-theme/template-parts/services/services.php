@@ -14,8 +14,8 @@ $services_title = get_field('services_title');
 $services = get_field('services');
 ?>
 
-<section class="services background-pre py-6 px-5">
-  <div class="service-wrapper has-text-centered">
+<section class="services wrapper background-pre py-6">
+  <div class="container service-wrapper has-text-centered">
     <h2 class="is-capitalized"><?php echo $services_title ?></h2>
     <div class="columns">
       <?php

@@ -1,10 +1,20 @@
-.symmetric-body {
-  .button {
+.symmetric {
+  p.symmetric-p {
+    text-align: left;
+    margin: 0 auto;
+    width: 225px;
     @include bp(tablet) {
-      margin: 10px 0 0 0;
+      width: 100%;
+      margin: 0;
     }
     @include bp(desktop-1024) {
-      margin: 55px 0 0 0;
+      width: 90%;
+    }
+  }
+
+  .button {
+    @include bp(tablet) {
+      margin: 2rem 0 0 0;
     }
   }
   .columns.is-vcentered {
@@ -24,56 +34,26 @@
         order: 2;
       }
     }
-    .symmetric-higher {
-      position: relative;
-      .symmetric-illustration {
-        position: absolute;
-        top: -18%;
-        left: -19%;
-        @include bp(tablet) {
-          top: 67%;
-          left: 67%;
-        }
+    .desc-container {
+      width: 385px;
+      margin: 0 auto;
+      padding: 0;
 
-        .symmetric-illust {
-          width: 186px;
-          height: auto;
-        }
+      @include bp(tablet) {
+        padding: 1.5rem 1.5rem 1.5rem 2rem;
+        height: 350px;
+        width: 100%;
+      }
+
+      @include bp(desktop-1920) {
+        height: 500px;
       }
     }
-
-    .order-one {
-      .desc-container {
-        max-height: 420px;
-        max-width: 400px;
-        margin: 0 auto;
-        border-top-left-radius: 50% 50%;
-        border-top-right-radius: 50% 50%;
-
-        @include bp(tablet) {
-          height: 350px;
-          max-width: unset;
-          border-radius: 0px 225px 225px 0px;
-        }
-
-        @include bp(desktop-1920) {
-          height: 500px;
-        }
-      }
-    }
-
     .order-two {
       .desc-container {
-        max-height: 420px;
-        max-width: 400px;
-        margin: 0 auto;
-        border-bottom-left-radius: 50% 50%;
-        border-bottom-right-radius: 50% 50%;
-
         @include bp(tablet) {
           height: 350px;
           max-width: unset;
-          border-radius: 225px 0px 0px 225px;
         }
 
         @include bp(desktop-1920) {
@@ -88,6 +68,83 @@
     img {
       height: 350px;
       object-fit: cover;
+    }
+  }
+
+  .symmetric-higher {
+    height: 450px;
+  }
+
+  .right-oval {
+    .symmetric-higher {
+      border-radius: 50% 52% 0px 0px;
+      position: relative;
+
+      @include bp(tablet) {
+        border-radius: 0px 225px 225px 0px;
+      }
+      .column.is-0-tablet.is-4-desktop.order-one {
+        padding: 27px;
+        @include bp(tablet) {
+          padding: 0;
+        }
+      }
+      .column.is-12-tablet.is-8-desktop.order-two {
+        padding: 27px;
+        @include bp(tablet) {
+          padding: 3rem 0 0 2rem;
+        }
+      }
+      .symmetric-illustration {
+        position: absolute;
+        top: -18%;
+        left: -32%;
+        @include bp(tablet) {
+          top: 67%;
+          left: 74%;
+        }
+
+        .symmetric-illust {
+          width: 186px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .left-oval {
+    .symmetric-higher {
+      position: relative;
+      border-radius: 0 0 50% 52%;
+      .order-two {
+        padding: 27px;
+        @include bp(tablet) {
+          padding: 0;
+        }
+      }
+      .order-one {
+        padding: 27px;
+        @include bp(tablet) {
+          padding: 3rem 0 0 4rem;
+        }
+      }
+      @include bp(tablet) {
+        border-radius: 225px 0 0 225px;
+      }
+      .symmetric-illustration {
+        position: absolute;
+        bottom: -27%;
+        right: -22%;
+        @include bp(tablet) {
+          top: 67%;
+          left: 52%;
+        }
+
+        .symmetric-illust {
+          width: 186px;
+          height: auto;
+        }
+      }
     }
   }
 }

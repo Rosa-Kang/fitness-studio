@@ -28,8 +28,8 @@ if ($illust) {
 }
 
 ?>
-<section class="symmetric <?php echo $orientation; ?>">
-  <div class="symmetric-body pb-6">
+<section class="symmetric wrapper py-6">
+  <div class="symmetric-body <?php echo $orientation; ?>">
     <div class="columns is-vcentered is-full-mobile has-text-centered is-flex">
       <div class="column is-5-tablet is-4-desktop
       <?php if ($orientation == 'right-oval') {

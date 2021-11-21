@@ -3,16 +3,16 @@
 --------------------------------------------------------------*/
 
 .button {
-  width: 225px;
-  height: 50px;
+  width: 225px !important;
+  height: 50px !important;
   border-radius: 0;
-  font-family: $font__accent;
-  font-size: 20px;
-  line-height: 25px;
+  font-family: $font__accent !important;
+  font-size: 20px !important;
+  line-height: 25px !important;
   text-transform: uppercase;
-  margin-top: 40px;
-  letter-spacing: 2px;
-  font-weight: $font__weight-semibold;
+  margin-top: 30px;
+  letter-spacing: 2px !important;
+  font-weight: $font__weight-semibold !important;
 }
 .button.is-primary {
   background-color: $color__primary;
@@ -31,13 +31,14 @@
 .button.is-success,
 .button.is-success:active,
 .button.is-success:focus {
-  background: $color__success;
-  color: $color__primary;
+  background: $color__light-bis !important;
+  color: $color__primary !important;
+  border-color: transparent !important;
 }
 
 .button.is-success:hover {
-  background: $color__primary-invert;
-  color: $color__light;
+  background: $color__info !important;
+  color: $color__light !important;
 }
 
 // Menu Buttons -----------------------------

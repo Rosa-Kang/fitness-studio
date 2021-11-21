@@ -3,14 +3,31 @@
 --------------------------------------------------------------*/
 
 // Backgrounds (use Bulma has-background-color) --------------------
+.bg-light {
+  background: $color__light;
+  h2 {
+    color: $color__primary;
+  }
+  h4,
+  p {
+    color: $color__dark;
+  }
+}
+
 .bg-light-bis {
   background: $color__light-bis;
 }
 
-/*.bg-success-dark {
-  background: $color__success-dark;
+.bg-dark {
+  background: $color__primary;
+  h2 {
+    color: $color__light-bis;
+  }
+  h4,
+  p {
+    color: $color__light;
+  }
 }
-*/
 
 // Containers ------------------
 .container-sm {
@@ -90,16 +107,22 @@ ul.list-style-none {
 
 // FAQ Accordion -----------------------
 .schema-faq-section {
-  background-color: $color__success;
+  background-color: $color__background-pre;
   color: $color__primary-dark;
-  margin-bottom: 15px;
+  &:hover {
+    background: $color__success;
+  }
 }
 
 .schema-faq-question {
   display: block;
-  font-family: $font__accent;
-  font-size: 25px;
-  padding: 18px 35px 17px 35px;
+  font-family: $font__pre;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 39px 67px;
+  @include bp(desktop-1080) {
+    padding: 22px 35px;
+  }
 }
 
 .faq-closed {
@@ -110,7 +133,7 @@ ul.list-style-none {
   }
 
   &:hover {
-    background-color: $color__success-light;
+    background-color: $color__success;
     cursor: pointer;
   }
 }
@@ -128,7 +151,9 @@ ul.list-style-none {
 }
 
 .schema-faq-answer {
-  padding: 5px 35px 45px;
+  @include bp(desktop-1080) {
+    padding: 0 50px 50px;
+  }
 }
 
 /* Source: https://a11y-101.com/development/skip-link */

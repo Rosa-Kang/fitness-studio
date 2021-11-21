@@ -3,4 +3,24 @@
     display: inline-block;
     width: 150px;
   }
+
+  .studio-address {
+    padding: 2rem;
+    @include bp(desktop) {
+      padding: 2rem 4rem;
+    }
+  }
+  .studio-map {
+    @include bp(tablet) {
+      padding: 5rem 0;
+    }
+  }
+  h5.is-capitalized.pt-5 {
+    border-top: solid 2px #ddd7c9;
+  }
+
+  ul {
+    border-top: solid 2px #ddd7c9;
+    padding: 1rem 0 2rem;
+  }
 }

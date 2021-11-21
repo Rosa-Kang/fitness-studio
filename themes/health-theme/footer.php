@@ -9,18 +9,19 @@
 ?>
 
 </div><!-- #content -->
-<footer id="colophon" class="site-footer has-background-primary py-6 px-0" role="contentinfo">
-  <div class="columns is-full-mobile">
+<footer id="colophon" class="site-footer has-background-primary wrapper" role="contentinfo">
+  <div class="container is-vcentered">
     <div class="column is-flex-tablet">
       <div class="column has-text-centered-mobile">
-        <h3 class="is-capitalized">Subscribe To Our Newsletter</h3>
-        <form class="has-background-primary py-5" action="#">
-          <input class="mt-2 mb-2" type="text" placeholder="Name">
-          <input class="mt-2 mb-2" type="email" placeholder="Email">
+        <p class="footer-title is-capitalized">Subscribe To Our Newsletter</p>
+        <form class="has-background-primary mt-4" action="#">
+          <input class="placeholder mb-4" type="text" placeholder="Name">
+          <input class="placeholder mb-5" type="email" placeholder="Email">
           <input class="mt-2 button is-success" type="Submit" name="Subscribe">
         </form>
       </div>
       <div class="column is-flex">
+        <div class="column is-0-mobile"></div>
         <div class="column">
           <?php wp_nav_menu(array('menu' => 'Left Footer Menu')); ?>
         </div>
@@ -35,7 +36,7 @@
     <div class="column copyright has-text-centered px-0">
       <p>Privacy policy</p>
       <p><a href="privacy-policy" target="_blank">© 2021 Jane’s Pharmacy. All rights reserved. Website designed by
-          whitecanvasdesign.ca and positec.com</a></p>
+          whitecanvasdesign.ca</a></p>
     </div>
   </div>
 </footer>

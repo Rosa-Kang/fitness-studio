@@ -10,12 +10,12 @@
 
 <?php
 // TODO: add variables
-$subtitle = get_field('callout_subtitle');
-$title = get_field('callout_title');
-$content = get_field('callout_content');
-$button_link = get_field('callout_button_link');
-$button_label = get_field('callout_button_label');
-$background_color = get_field('background_color');
+$subtitle = get_field('callout_bottom_subtitle');
+$title = get_field('callout_bottom_title');
+$content = get_field('callout_bottom_content');
+$button_link = get_field('callout_bottom_button_link');
+$button_label = get_field('callout_bottom_button_label');
+$background_color = get_field('background_bottom_color');
 ?>
 <section class="callout wrapper is-vcentered py-6 <?php echo $background_color; ?>">
   <div class="container-sm pt-4 pb-6 px-4 has-text-centered">

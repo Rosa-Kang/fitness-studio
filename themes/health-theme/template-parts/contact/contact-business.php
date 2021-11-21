@@ -20,52 +20,54 @@ $email = get_field('contact_email', $post_id);
 $map = get_field('google_maps_embed_link', $post_id);
 ?>
 
-<section class="contact-section">
-  <div class="columns">
-    <div class="column">
-      <div class="column">
-        <!-- Studio Address -->
-        <h4>Store Address</h4>
-        <h4>Address</h4>
-        <p><?php echo $address ?> <br> <?php echo $city . " " . $province . " " . $postal; ?></p>
-        <h4>Phone</h4>
-        <a href="tel:<?php echo $phone; ?>">
-          <?php echo $phone; ?>
-        </a>
-        <h4>Email</h4>
-        <a href="mailto:<?php echo $email; ?>" target="_blank" rel="noopener noreferrer"><?php echo $email; ?></a>
-      </div>
-      <div class="column">
-        <!-- Studio Hours -->
-        <h4>Store Hours</h4>
-        <ul>
-          <?php
-          // Check rows exists.
-          if (have_rows('store_hours', $post_id)) :
+<section class="contact-section wrapper">
+  <div class="container">
+    <div class="info-map columns">
+      <div class="studio-address column is-half">
+        <div class="py-6">
+          <!-- Studio Address -->
+          <h4 class="is-uppercase">Studio Location</h4>
+          <h5 class="is-capitalized pt-5">Address</h5>
+          <p><?php echo $address ?> <br> <?php echo $city . " " . $province . " " . $postal; ?></p>
+          <h5 class="is-capitalized">Phone</h5>
+          <p href="tel:<?php echo $phone; ?>">
+            <?php echo $phone; ?>
+          </p>
+          <h5 class="is-capitalized">Email</h5>
+          <a href="mailto:<?php echo $email; ?>" target="_blank" rel="noopener noreferrer"><?php echo $email; ?></a>
+        </div>
+        <div class="studio-info">
+          <!-- Studio Hours -->
+          <h4 class="h4-contact is-uppercase">Studio Hours</h4>
+          <ul>
+            <?php
+            // Check rows exists.
+            if (have_rows('store_hours', $post_id)) :
 
-            // Loop through rows.
-            while (have_rows('store_hours', $post_id)) : the_row();
+              // Loop through rows.
+              while (have_rows('store_hours', $post_id)) : the_row();
 
-              // Load sub field value.
-              $day = get_sub_field('day_of_the_week');
-              $open = get_sub_field('time_store_opens');
-              $close = get_sub_field('time_store_closes');
-              // Do something...
-          ?>
-          <li><span class="contact-day-width"><?php echo $day; ?></span><?php echo $open . " " . $close ?></li>
-          <?php
-            // End loop.
-            endwhile;
-          // No value.
-          else :
-          // Do something...
-          endif; ?>
-        </ul>
+                // Load sub field value.
+                $day = get_sub_field('day_of_the_week');
+                $open = get_sub_field('time_store_opens');
+                $close = get_sub_field('time_store_closes');
+                // Do something...
+            ?>
+            <li><span class="contact-day-width"><?php echo $day; ?></span><?php echo $open . " - " . $close ?></li>
+            <?php
+              // End loop.
+              endwhile;
+            // No value.
+            else :
+            // Do something...
+            endif; ?>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="column">
-      <!-- Map -->
-      <?php echo $map; ?>
+      <div class="studio-map column is-half">
+        <!-- Map -->
+        <?php echo $map; ?>
+      </div>
     </div>
   </div>
 </section>

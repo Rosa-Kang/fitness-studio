@@ -8,9 +8,9 @@
       flex-direction: column;
     }
   }
-  h3.is-capitalized {
-    @include bp(tablet) {
-      padding-left: 24px;
-    }
+  .column.copyright.has-text-centered.px-0 p {
+    white-space: normal;
+    width: 92%;
+    margin: 0 auto;
   }
 }

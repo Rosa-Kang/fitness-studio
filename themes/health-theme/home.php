@@ -14,17 +14,18 @@ get_header(); ?>
 // TODO: Add variables
 ?>
 
+
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
     <section class="blog-container columns is-multiline p-6 is-flex is-justify-content-center">
       <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>
-      <div class="column is-5 p-5">
+      <article class="column is-5 p-5" id="post-<?php the_ID(); ?>">
         <div><?php the_post_thumbnail(); ?></div>
-        <h3 class="is-capitalized"><?php the_title(); ?></h3>
+        <h3 class="subtitle is-capitalized"><?php the_title(); ?></h3>
         <p><?php the_excerpt(); ?></p>
         <a class="button is-uppercase button is-primary" href="<?php the_permalink($post_item['ID']) ?>">Read More</a>
-      </div>
+      </article>
       <?php endwhile;
       else :
         echo '<p data-aos="fade-up">No content found</p>';
@@ -33,8 +34,8 @@ get_header(); ?>
 
       ?>
     </section>
-
-  </main><!-- #main -->
-</div><!-- #primary -->
+    <?php get_template_part('template-parts/section/button-show-more'); ?>
+  </main>
+</div>
 
 <?php get_footer(); ?>

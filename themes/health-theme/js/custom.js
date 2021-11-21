@@ -4,7 +4,7 @@
  * Templates: All
  *
  */
- (function ($) {
+(function ($) {
   $(function () {
     // Start of Auto Add Rel to External Links -------------------
     addTargetBlankToExternalLinks();
@@ -32,14 +32,35 @@
         $(this).next().slideUp();
         $(this).removeClass('faq-opened');
         $(this).addClass('faq-closed');
-      }
-      else {
+      } else {
         $('.schema-faq-answer').slideUp();
         $(this).removeClass('faq-closed');
         $(this).next().slideDown();
         $(this).addClass('faq-opened');
       }
     }); // End of FAQ Accordion ----------------
-
   }); // End of Doc Ready -------------------
+
+  // Start of Show More Button (Resources Page) -------------------
+  $('.blog article').hide().slice(0, 4).show();
+
+  $('.page-template-page-updates article').hide().slice(0, 3).show();
+
+  $('#loadMore').click(function (e) {
+    e.preventDefault();
+    $('article:hidden').slice(0, 4).show();
+    if ($('article:hidden').length === 0) {
+      $('#loadMore').replaceWith("<p class='is-uppercase'>no more</p>");
+    }
+  });
+
+  $('.bulletins li').hide().slice(0, 4).show();
+
+  $('.bulletins #loadMore').click(function (e) {
+    e.preventDefault();
+    $('.bulletins li:hidden').slice(0, 4).show();
+    if ($('.bulletins li:hidden').length === 0) {
+      $('#loadMore').replaceWith("<p class='text-btn'>no more</p>");
+    }
+  });
 })(jQuery);

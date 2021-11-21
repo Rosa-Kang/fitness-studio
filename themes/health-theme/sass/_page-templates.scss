@@ -2,6 +2,11 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+// Article ---------------------------------
+.blog-hero {
+  object-fit: contain;
+}
+
 // Blog/News Posts --------------------------
 .single-post {
   article {
