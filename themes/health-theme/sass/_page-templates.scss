@@ -25,6 +25,10 @@
     @include col-cen();
   }
 
+  .blog-thumbnail img {
+    height: 35vw;
+    object-fit: cover;
+  }
   figure {
     padding: $space-unit--lg 0;
     margin: 0 auto;

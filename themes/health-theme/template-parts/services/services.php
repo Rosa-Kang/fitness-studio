@@ -36,7 +36,7 @@ $services = get_field('services');
           $button_link = get_sub_field('service_button_link');
           // Do something...
       ?>
-      <div class="column py-6 is-flex-direction-column is-align-items-center">
+      <div class="column pt-6 is-flex-direction-column is-align-items-center">
         <img id="services-icon" src="<?php echo $icon_url ?>" alt="<?php echo $icon_alt ?>">
         <h3 class="subtitle is-capitalized pb-4"><?php echo $subtitle ?></h3>
         <p class="services-info"><?php echo $info ?></p>

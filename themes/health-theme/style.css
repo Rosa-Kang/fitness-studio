@@ -9039,6 +9039,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+li#menu-item-580 a {
+  font-family: "Montserrat" !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  font-weight: 600 !important; }
+
+li#menu-item-580 a::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20id%3D%22Icon%5fmaterial-local-grocery-store%22%20data-name%3D%22Icon%20material-local-grocery-store%22%20d%3D%22M6.9%2C17.4a1.8%2C1.8%2C0%2C1%2C0%2C1.8%2C1.8A1.8%2C1.8%2C0%2C0%2C0%2C6.9%2C17.4ZM1.5%2C3V4.8H3.3l3.24%2C6.831-1.215%2C2.2A1.74%2C1.74%2C0%2C0%2C0%2C5.1%2C14.7a1.805%2C1.805%2C0%2C0%2C0%2C1.8%2C1.8H17.7V14.7H7.278a.223.223%2C0%2C0%2C1-.225-.225l.027-.108L7.89%2C12.9h6.7a1.791%2C1.791%2C0%2C0%2C0%2C1.575-.927l3.222-5.841A.879.879%2C0%2C0%2C0%2C19.5%2C5.7a.9.9%2C0%2C0%2C0-.9-.9H5.289L4.443%2C3ZM15.9%2C17.4a1.8%2C1.8%2C0%2C1%2C0%2C1.8%2C1.8A1.8%2C1.8%2C0%2C0%2C0%2C15.9%2C17.4Z%22%20transform%3D%22translate%28-1.5%20-3%29%22%20fill%3D%22%232c3638%22%2F%3E%0A%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 26px;
+  padding-left: 5px; }
+
 .bg-light {
   background: #ffffff; }
   .bg-light h2 {
@@ -10315,6 +10327,11 @@ object {
   -ms-flex-align: center;
   align-items: center; }
 
+.single-post .blog-thumbnail img {
+  height: 35vw;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
 .single-post figure {
   padding: 2.505rem 0;
   margin: 0 auto; }
@@ -10542,7 +10559,7 @@ object {
     .popout-menu ul li {
       width: 100%;
       padding: 1.005rem 0;
-      border-bottom: 1px solid #2c3638; }
+      border-bottom: 1px solid #966844; }
       .popout-menu ul li:last-of-type {
         border-bottom: none; }
 
@@ -10961,7 +10978,7 @@ li.menu-item-has-children {
                 order: 2; } }
   .symmetric .columns.is-vcentered .desc-container {
     margin: 0 auto;
-    max-width: 405px;
+    max-width: 360px;
     height: 435px; }
     @media (min-width: 768px) {
       .symmetric .columns.is-vcentered .desc-container {
@@ -10986,7 +11003,7 @@ li.menu-item-has-children {
   .symmetric .columns.is-vcentered h1 {
     color: #2c3638; }
   .symmetric .columns.is-vcentered img {
-    max-height: 435px;
+    max-height: 350px;
     -o-object-fit: cover;
        object-fit: cover; }
     @media (min-width: 768px) {
@@ -11034,7 +11051,7 @@ li.menu-item-has-children {
     position: absolute;
     z-index: 9 !important;
     top: -19%;
-    left: -26%; }
+    left: -16%; }
     @media (min-width: 768px) {
       .symmetric .right-oval .symmetric-higher .symmetric-illustration {
         top: 67%;
@@ -11051,6 +11068,9 @@ li.menu-item-has-children {
   @media (min-width: 768px) {
     .symmetric .left-oval .symmetric-higher .order-one {
       margin-left: 2em; } }
+  .symmetric .left-oval .symmetric-higher .order-two {
+    margin: 0 !important;
+    padding: 0 !important; }
   .symmetric .left-oval .symmetric-higher .symmetric-illustration {
     position: absolute;
     z-index: 9 !important;
@@ -11063,6 +11083,10 @@ li.menu-item-has-children {
     .symmetric .left-oval .symmetric-higher .symmetric-illustration .symmetric-illust {
       width: 170px; }
 
+.page-template-page-about section.symmetric.wrapper.px-4.my-6 {
+  margin-top: 0 !important;
+  padding-top: 0 !important; }
+
 .services.background-pre {
   background-color: #f5f4f2; }
   @media (min-width: 1216px) {
@@ -11070,8 +11094,14 @@ li.menu-item-has-children {
       max-width: 1152px;
       margin: 0 auto; } }
   .services.background-pre #services-icon {
-    width: auto;
-    height: 21%; }
+    height: 25vw;
+    width: auto; }
+    @media (min-width: 768px) {
+      .services.background-pre #services-icon {
+        height: 10vw; } }
+    @media (min-width: 1080px) {
+      .services.background-pre #services-icon {
+        height: 7vw; } }
   .services.background-pre .services-info {
     padding: 0 3rem;
     margin: 0; }

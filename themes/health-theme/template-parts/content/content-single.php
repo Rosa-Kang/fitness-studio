@@ -13,7 +13,7 @@ $image = wp_get_attachment_url(get_post_thumbnail_id(get_option('page')));
 $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('pt-5'); ?>>
-  <figure class="image is-3by2 mx-0 my-0">
+  <figure class="image mx-0 my-0 blog-thumbnail">
     <img class="blog-hero" src="<?php echo $image; ?>" alt="<?php echo $image_alt; ?>">
   </figure>
   <div class="container content-wrapper">

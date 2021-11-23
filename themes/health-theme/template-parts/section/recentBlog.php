@@ -1,6 +1,6 @@
 <section class="blog wrapper columns is-multiline has-text-centered py-6">
-  <div class="container">
-    <div class="column blog-illust-section">
+  <div class="container mt-5">
+    <div class="column blog-illust-section pt-6">
       <?php echo wp_get_attachment_image(425, array(68, 71), "", ["class" => "blog-illust", "alt" => "blog-illustration"]); ?>
       <h2 class="column">Blog</h2>
     </div>

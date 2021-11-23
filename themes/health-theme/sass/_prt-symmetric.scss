@@ -40,7 +40,7 @@
     }
     .desc-container {
       margin: 0 auto;
-      max-width: 405px;
+      max-width: 360px;
       height: 435px;
 
       @include bp(tablet) {
@@ -61,7 +61,7 @@
       color: $color__dark;
     }
     img {
-      max-height: 435px;
+      max-height: 350px;
       object-fit: cover;
 
       @include bp(tablet) {
@@ -114,7 +114,7 @@
         position: absolute;
         z-index: 9 !important;
         top: -19%;
-        left: -26%;
+        left: -16%;
         @include bp(tablet) {
           top: 67%;
           left: 74%;
@@ -139,6 +139,10 @@
           margin-left: 2em;
         }
       }
+      .order-two {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
       .symmetric-illustration {
         position: absolute;
         z-index: 9 !important;
@@ -155,4 +159,9 @@
       }
     }
   }
+}
+
+.page-template-page-about section.symmetric.wrapper.px-4.my-6 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }

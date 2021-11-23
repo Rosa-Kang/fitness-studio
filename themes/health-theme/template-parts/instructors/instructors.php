@@ -13,7 +13,7 @@ $instructor_title = get_field('instructor_title');
 $instructor_deco = get_field('instructor_deco');
 ?>
 
-<section class="instructors wrapper py-6">
+<section class="instructors wrapper pt-6">
   <div class="instructor container content-wrapper has-text-centered">
     <img src="<?php echo $instructor_deco['url'] ?>" alt="<?php echo $instructor_deco['alt'] ?>">
     <h2 class="is-capitalized"><?php echo $instructor_title ?></h2>

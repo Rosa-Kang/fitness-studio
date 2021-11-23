@@ -9,8 +9,14 @@
   }
 
   #services-icon {
+    height: 25vw;
     width: auto;
-    height: 21%;
+    @include bp(tablet) {
+      height: 10vw;
+    }
+    @include bp(desktop-1080) {
+      height: 7vw;
+    }
   }
   .services-info {
     padding: 0 3rem;
