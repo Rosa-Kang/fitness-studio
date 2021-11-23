@@ -28,7 +28,7 @@ if ($illust) {
 }
 
 ?>
-<section class="symmetric py-6">
+<section class="symmetric px-4 my-6">
   <div class="symmetric-body <?php echo $orientation; ?>">
     <div class="columns is-vcentered is-full-mobile has-text-centered is-flex">
       <div class="column is-5-tablet is-4-desktop
@@ -48,12 +48,12 @@ if ($illust) {
           <div class="symmetric-illustration">
             <img class="symmetric-illust" src="<?php echo $illustration_url; ?>" alt="<?php echo $illustration_alt; ?>">
           </div>
-          <div class="column is-0-tablet is-4-desktop <?php if ($orientation == 'right-oval') {
-                                                        echo 'order-one';
-                                                      } else {
-                                                        echo 'order-two';
-                                                      } ?>"></div>
-          <div class="column is-12-tablet is-8-desktop <?php if ($orientation == 'right-oval') {
+          <div class="column is-1-mobile is-1-tablet is-3-desktop <?php if ($orientation == 'right-oval') {
+                                                                    echo 'order-one';
+                                                                  } else {
+                                                                    echo 'order-two';
+                                                                  } ?>"></div>
+          <div class="column is-11-tablet is-8-desktop <?php if ($orientation == 'right-oval') {
                                                           echo 'order-two';
                                                         } else {
                                                           echo 'order-one';

@@ -17,11 +17,11 @@
         <form class="has-background-primary mt-4" action="#">
           <input class="placeholder mb-4" type="text" placeholder="Name">
           <input class="placeholder mb-5" type="email" placeholder="Email">
-          <input class="mt-2 button is-success" type="Submit" name="Subscribe">
+          <input class="mt-2 button is-success" type="submit" value="Subscribe">
         </form>
       </div>
       <div class="column is-flex">
-        <div class="column is-0-mobile"></div>
+        <div class="column is-0-mobile p-0"></div>
         <div class="column">
           <?php wp_nav_menu(array('menu' => 'Left Footer Menu')); ?>
         </div>

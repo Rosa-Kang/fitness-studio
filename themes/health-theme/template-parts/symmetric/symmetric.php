@@ -28,7 +28,7 @@ if ($illust) {
 }
 
 ?>
-<section class="symmetric wrapper py-6">
+<section class="symmetric wrapper px-4 my-6">
   <div class="symmetric-body <?php echo $orientation; ?>">
     <div class="columns is-vcentered is-full-mobile has-text-centered is-flex">
       <div class="column is-5-tablet is-4-desktop
@@ -39,21 +39,21 @@ if ($illust) {
       } ?>">
         <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
       </div>
-      <div class="column is-vcentered is-7-tablet is-8-desktop <?php if ($orientation == 'right-oval') {
-                                                                  echo 'order-one';
-                                                                } else {
-                                                                  echo 'order-two';
-                                                                } ?>">
+      <div class="column mt-4 is-vcentered is-7-tablet is-8-desktop <?php if ($orientation == 'right-oval') {
+                                                                      echo 'order-one';
+                                                                    } else {
+                                                                      echo 'order-two';
+                                                                    } ?>">
         <div class="symmetric-higher columns desc-container bg-light-bis content-wrapper">
           <div class="symmetric-illustration">
             <img class="symmetric-illust" src="<?php echo $illustration_url; ?>" alt="<?php echo $illustration_alt; ?>">
           </div>
-          <div class="column is-0-tablet is-4-desktop <?php if ($orientation == 'right-oval') {
-                                                        echo 'order-one';
-                                                      } else {
-                                                        echo 'order-two';
-                                                      } ?>"></div>
-          <div class="column is-12-tablet is-8-desktop <?php if ($orientation == 'right-oval') {
+          <div class="column is-1-mobile is-1-tablet is-3-desktop <?php if ($orientation == 'right-oval') {
+                                                                    echo 'order-one';
+                                                                  } else {
+                                                                    echo 'order-two';
+                                                                  } ?>"></div>
+          <div class="column is-11-tablet is-8-desktop <?php if ($orientation == 'right-oval') {
                                                           echo 'order-two';
                                                         } else {
                                                           echo 'order-one';

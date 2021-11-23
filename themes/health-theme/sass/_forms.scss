@@ -6,11 +6,13 @@
 
 input[type='text']::placeholder,
 input[type='email']::placeholder,
-textarea[type='']::placeholder {
+input#wpforms-456-field_1::placeholder,
+input#wpforms-456-field_2::placeholder,
+textarea#wpforms-456-field_3::placeholder {
   font-family: $font__pre;
   color: $color__info;
   font-weight: $font__weight-medium;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
 }
 
@@ -49,7 +51,7 @@ textarea {
   width: 100%;
   resize: none;
   height: 235px !important;
-  margin-bottom: $space-unit--lg !important;
+  margin-bottom: 2rem !important;
   padding: $space-unit--xs $space-unit--s $space-unit--xs $space-unit--s !important;
   border: none !important;
   border-radius: 0 !important;
@@ -95,11 +97,6 @@ div.wpforms-container .wpforms-form .choices__placeholder {
 
     .wpforms-form input.wpforms-field-medium {
       max-width: unset;
-    }
-
-    .wpforms-form .wpforms-submit-container {
-      text-align: center;
-      margin-bottom: $base__space-unit !important;
     }
   }
 }
@@ -172,4 +169,15 @@ div.wpforms-container .wpforms-form .choices__placeholder {
       margin-left: 4%;
     }
   }
+}
+
+div#wpforms-456 div#wpforms-confirmation-456 {
+  margin-top: 1em;
+  border: none !important;
+}
+div#wpforms-456 div#wpforms-confirmation-456,
+div#wpforms-456 div#wpforms-confirmation-456 p {
+  color: $color__primary;
+  background-color: $color__light-bis;
+  font-weight: $font__weight-medium;
 }

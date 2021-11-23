@@ -31,7 +31,7 @@
 
   ?>
 
-  <div class="schema-faq wp-block-yoast-faq-block">
+  <div class="container schema-faq wp-block-yoast-faq-block">
     <div class="schema-faq-section m-5" id="faq-question-1626813334424"><strong
         class="schema-faq-question"><?php echo $header; ?></strong>
       <p class="schema-faq-answer"><?php echo $content; ?></p>

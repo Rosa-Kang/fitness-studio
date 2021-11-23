@@ -3,9 +3,11 @@
 --------------------------------------------------------------*/
 
 .site-footer {
-  .columns.is-full-mobile {
+  p.footer-title.is-capitalized {
+    width: 86%;
+    margin: 0 auto;
     @include bp(tablet) {
-      flex-direction: column;
+      width: 100%;
     }
   }
   .column.copyright.has-text-centered.px-0 p {

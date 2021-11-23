@@ -1,8 +1,12 @@
 .symmetric {
+  @include bp(tablet) {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
   p.symmetric-p {
     text-align: left;
     margin: 0 auto;
-    width: 225px;
+    width: 85%;
     @include bp(tablet) {
       width: 100%;
       margin: 0;
@@ -14,7 +18,7 @@
 
   .button {
     @include bp(tablet) {
-      margin: 2rem 0 0 0;
+      margin: 1rem 0 0 0;
     }
   }
   .columns.is-vcentered {
@@ -35,30 +39,21 @@
       }
     }
     .desc-container {
-      width: 385px;
       margin: 0 auto;
-      padding: 0;
+      max-width: 405px;
+      height: 435px;
 
       @include bp(tablet) {
-        padding: 1.5rem 1.5rem 1.5rem 2rem;
-        height: 350px;
-        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 35vw;
+        max-width: 100%;
       }
 
-      @include bp(desktop-1920) {
-        height: 500px;
-      }
-    }
-    .order-two {
-      .desc-container {
-        @include bp(tablet) {
-          height: 350px;
-          max-width: unset;
-        }
-
-        @include bp(desktop-1920) {
-          height: 500px;
-        }
+      @include bp(desktop-1080) {
+        height: 25vw;
       }
     }
 
@@ -66,47 +61,67 @@
       color: $color__dark;
     }
     img {
-      height: 350px;
+      max-height: 435px;
       object-fit: cover;
+
+      @include bp(tablet) {
+        max-height: 31vw;
+        width: 31vw;
+      }
+      @include bp(desktop-1080) {
+        max-height: 24vw;
+        width: 24vw;
+      }
     }
   }
 
-  .symmetric-higher {
-    height: 450px;
-  }
-
   .right-oval {
+    h2 {
+      margin-top: 1em;
+      @include bp(desktop-1080) {
+        margin-top: 0;
+      }
+    }
+    .column.is-5-tablet.is-4-desktop.order-two img {
+      @include bp(tablet) {
+        margin-left: 0.5em;
+      }
+      @include bp(desktop-1080) {
+        margin-left: 2.7vw;
+      }
+    }
+    .column.p-0.is-vcentered.is-7-tablet.is-8-desktop.order-one {
+      width: 86%;
+      @include bp(tablet) {
+        width: 56%;
+      }
+    }
     .symmetric-higher {
       border-radius: 50% 52% 0px 0px;
+      width: 100%;
       position: relative;
 
       @include bp(tablet) {
         border-radius: 0px 225px 225px 0px;
       }
-      .column.is-0-tablet.is-4-desktop.order-one {
-        padding: 27px;
-        @include bp(tablet) {
-          padding: 0;
-        }
-      }
       .column.is-12-tablet.is-8-desktop.order-two {
-        padding: 27px;
+        padding: 65px 0 32px;
         @include bp(tablet) {
-          padding: 3rem 0 0 2rem;
+          padding: 2rem 0;
         }
       }
       .symmetric-illustration {
         position: absolute;
-        top: -18%;
-        left: -32%;
+        z-index: 9 !important;
+        top: -19%;
+        left: -26%;
         @include bp(tablet) {
           top: 67%;
           left: 74%;
         }
 
         .symmetric-illust {
-          width: 186px;
-          height: auto;
+          width: 170px;
         }
       }
     }
@@ -116,33 +131,26 @@
     .symmetric-higher {
       position: relative;
       border-radius: 0 0 50% 52%;
-      .order-two {
-        padding: 27px;
-        @include bp(tablet) {
-          padding: 0;
-        }
-      }
-      .order-one {
-        padding: 27px;
-        @include bp(tablet) {
-          padding: 3rem 0 0 4rem;
-        }
-      }
       @include bp(tablet) {
         border-radius: 225px 0 0 225px;
       }
+      .order-one {
+        @include bp(tablet) {
+          margin-left: 2em;
+        }
+      }
       .symmetric-illustration {
         position: absolute;
-        bottom: -27%;
-        right: -22%;
+        z-index: 9 !important;
+        bottom: -20%;
+        right: -20%;
         @include bp(tablet) {
-          top: 67%;
-          left: 52%;
+          top: 63%;
+          left: 48%;
         }
 
         .symmetric-illust {
-          width: 186px;
-          height: auto;
+          width: 170px;
         }
       }
     }

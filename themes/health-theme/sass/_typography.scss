@@ -124,7 +124,7 @@ h2,
 }
 
 h2.symmetric-headline {
-  width: 225px;
+  width: 80%;
   text-align: left;
   margin: 0 auto;
   @include bp(tablet) {
@@ -282,7 +282,7 @@ p.footer-title {
   font-weight: 600;
   color: $color__light;
   font-size: 25px;
-  line-height: 61px;
+  line-height: 31px;
   margin-bottom: 0;
 
   @include bp($mobile__bp) {

@@ -8,10 +8,10 @@
 (function ($) {
   $(function () {
     // Start of Popout Menu -------------------------
-    $('#menu-bars').click(function(){
+    $('#menu-bars').click(function () {
       $(this).toggleClass('toggled');
 
-      if ($(this).hasClass('toggled')){
+      if ($(this).hasClass('toggled')) {
         $(this).addClass('change');
         $('#popout').addClass('show');
       } else {
@@ -19,7 +19,7 @@
         $('#popout').removeClass('show');
       }
     });
-      
+
     // Detect click outside mobile menu
     $(document).mouseup(function (e) {
       var menu = $('.popout-menu');
@@ -33,9 +33,7 @@
 
     // Start of Animate on Scroll ---------------------
     // Animations added to elements without data-aos attribute in html element
-    $(
-      '.intro p'
-    ).attr({
+    $('.intro p').attr({
       'data-aos': 'fade-zoom-in',
       'data-aos-easing': 'ease',
       'data-aos-offset': '0',
@@ -46,7 +44,7 @@
     AOS.init({
       duration: 1300,
       once: false,
-      mirror: true
+      mirror: true,
     });
 
     $(window).on('load', function () {
