@@ -11,6 +11,7 @@
   #services-icon {
     height: 25vw;
     width: auto;
+    margin: 0 auto;
     @include bp(tablet) {
       height: 10vw;
     }

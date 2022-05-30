@@ -1,14 +1,14 @@
 /**
  * File: gallery.js
  *
- * Templates: 
+ * Templates:
  *
  * Slider (swiper.js)
  *
  */
 (function ($) {
   $(function () {
-  // Start of Gallery --------------------
-  // End of Gallery ------------------------
+    // Start of Gallery --------------------
+    // End of Gallery ------------------------
   }); // End of Doc Ready -------------------
 })(jQuery);

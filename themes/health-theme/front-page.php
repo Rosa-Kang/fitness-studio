@@ -9,10 +9,10 @@ get_header(); ?>
 
 
 <?php get_template_part('template-parts/hero/hero'); ?>
-<?php get_template_part('template-parts/callout/callout'); ?>
+<?php get_template_part('template-parts/intro/intro'); ?>
 <?php get_template_part('template-parts/services/services'); ?>
-<?php get_template_part('template-parts/instructors/instructors'); ?>
-<?php get_template_part('template-parts/symmetric/symmetric'); ?>
+<?php get_template_part('template-parts/team-members/team-members'); ?>
+<?php get_template_part('template-parts/callout/callout-right'); ?>
 <?php get_template_part('template-parts/section/recentBlog'); ?>
 
 

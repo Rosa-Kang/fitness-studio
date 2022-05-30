@@ -37,16 +37,20 @@ if ($illustration) {
   <div class="hero-body p-0">
     <div class="columns is-gapless is-vcentered">
       <div class="column is-7-desktop is-6-widescreen">
-        <div class="image-container" style="background:url(<?php echo $image_url; ?>) top center / cover no-repeat;"
+        <div class="image-container" style="background:url(<?php echo $image_url; ?>) center / cover no-repeat;"
           role="img" aria-label="<?php echo $image_alt; ?>"></div>
       </div>
       <div class="column is-5-desktop is-6-widescreen">
-        <div class="text-container content-wrapper">
+        <div data-aos="fade-in" class="text-container content-wrapper">
           <h1 class="mt-0"><?php echo $title; ?></h1>
           <p><?php echo $text; ?> </p>
         </div>
-        <div class="hero-illustration">
-          <img src="<?php echo $illust_url; ?>" alt="<?php echo $illust_alt; ?>">
+        <div data-aos="fade-up" class="hero-illustration">
+          <?php if ($illustration) : ?>
+          <figure class="image m-0">
+            <img src="<?php echo $illust_url; ?>" alt="<?php echo $illust_alt; ?>">
+          </figure>
+          <?php endif; ?>
         </div>
       </div>
     </div>

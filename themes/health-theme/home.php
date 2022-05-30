@@ -10,19 +10,14 @@ get_header(); ?>
 <?php get_template_part('template-parts/hero/hero'); ?>
 
 
-<?php
-// TODO: Add variables
-?>
-
-
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
     <section class="blog-container columns is-multiline p-6 is-flex is-justify-content-center">
       <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>
-      <article class="column is-5 p-5" id="post-<?php the_ID(); ?>">
+      <article data-aos="fade-up" class="column is-5 p-5" id="post-<?php the_ID(); ?>">
         <div><?php the_post_thumbnail(); ?></div>
-        <h3 class="subtitle is-capitalized"><?php the_title(); ?></h3>
+        <h2 class="subtitle is-capitalized"><?php the_title(); ?></h2>
         <p><?php the_excerpt(); ?></p>
         <a class="button is-uppercase button is-primary" href="<?php the_permalink($post_item['ID']) ?>">Read More</a>
       </article>

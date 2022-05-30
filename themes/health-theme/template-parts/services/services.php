@@ -16,7 +16,7 @@ $services = get_field('services');
 
 <section class="services wrapper background-pre py-6">
   <div class="container service-wrapper has-text-centered">
-    <h2 class="is-capitalized"><?php echo $services_title ?></h2>
+    <h2 data-aos="fade-up" class="is-capitalized"><?php echo $services_title ?></h2>
     <div class="columns">
       <?php
 
@@ -24,27 +24,30 @@ $services = get_field('services');
       if (have_rows('services')) :
 
         // Loop through rows.
-        while (have_rows('services')) : the_row();
-
-          // Load sub field value.
-          $icon = get_sub_field('service_icon');
+        $i = 0;
+        foreach ($services as $service) :
+          $icon = $service['service_icon'];
           $icon_url = $icon['url'];
           $icon_alt = $icon['alt'];
-          $subtitle = get_sub_field('service_heading_title');
-          $info = get_sub_field('service_info');
-          $button_text = get_sub_field('service_button_text');
-          $button_link = get_sub_field('service_button_link');
-          // Do something...
+          $subtitle = $service['service_heading_title'];
+          $info = $service['service_info'];
+          $button_text = $service['service_button_text'];
+          $button_link = $service['service_button_link'];
+          $i++;
       ?>
-      <div class="column pt-6 is-flex-direction-column is-align-items-center">
-        <img id="services-icon" src="<?php echo $icon_url ?>" alt="<?php echo $icon_alt ?>">
+      <div data-aos="fade-up" data-aos-delay="<?php echo $i * 200; ?>"
+        class="column pt-6 is-flex-direction-column is-align-items-center">
+        <figure class="image">
+          <img id="services-icon" src="<?php echo $icon_url ?>" alt="<?php echo $icon_alt ?>">
+        </figure>
         <h3 class="subtitle is-capitalized pb-4"><?php echo $subtitle ?></h3>
         <p class="services-info"><?php echo $info ?></p>
-        <a class="button is-primary is-uppercase py-1 px-2"><?php echo $button_text ?></a>
+        <a href="<?php echo $button_link ?>"
+          class="button is-primary is-uppercase py-1 px-2"><?php echo $button_text ?></a>
       </div>
       <?php
         // End loop.
-        endwhile;
+        endforeach;
 
       // No value.
       else :

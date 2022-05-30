@@ -18,6 +18,7 @@ $space-unit--lg: $base__space-unit * 1.67; // 2.5rem
 $space-unit--s: $base__space-unit * 0.67; // 1rem
 $space-unit--xs: $base__space-unit/2; // 0.75rem
 $space-unit--xxs: $base__space-unit/3; // 0.5rem
+$space-unit--xxxs: $base__space-unit/5; // 0.5rem
 
 // Custom Colors -----------------------------------
 // TODO: Add custom colors and comment out unused ones here and in bulma-custom.scss
@@ -30,19 +31,19 @@ $color__primary-invert: #ffffff; //same as primary for footer input
 $color__primary-dark: #2c3638;
 /*** SECONDARY ***/
 $color__success: #ddd7c9; // h1 font color
-$color__success-invert: $color__primary; // turquoise
+$color__success-invert: #966844; // footer hover
 $color__success-light: #96d1cb; // light turquoise
 $color__success-dark: $color__primary-dark; // dark turquoise
 /*** ACCENT ***/
 $color__info: #966844; // light beige
-$color__info-invert: $color__primary-invert; // turquoise
+$color__info-invert: #cca039; // turquoise
 $color__info-light: $color__primary-invert; // turquoise
 $color__info-dark: #989797; // lighter dark grey
 //$color__warning: #cc6d4f; // terracotta sunrise
 //$color__warning-invert: $color__info;
 //$color__warning-light: #b97131; // autumn leaves
 //$color__warning-dark:#34A8A2; //turquoise
-$color__overlay: rgba(49, 49, 51, 0.25);
+$color__overlay: #1167b1;
 
 // Colors ----------------------------------------
 $color__background-body: $color__light;
@@ -58,7 +59,7 @@ $color__border-abbr: #666;
 
 $color__link: $color__primary;
 $color__link-visited: $color__primary;
-$color__link-hover: $color__info-dark;
+$color__link-hover: $color__info;
 
 // Typography ------------------------------------
 $font__main: 'Open Sans', sans-serif;

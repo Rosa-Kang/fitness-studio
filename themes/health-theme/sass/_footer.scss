@@ -3,6 +3,12 @@
 --------------------------------------------------------------*/
 
 .site-footer {
+  a:hover {
+    color: $color__success-invert !important;
+  }
+  svg:hover {
+    color: $color__success-invert !important;
+  }
   p.footer-title.is-capitalized {
     width: 86%;
     margin: 0 auto;
@@ -10,7 +16,7 @@
       width: 100%;
     }
   }
-  .column.copyright.has-text-centered.px-0 p {
+  .column.copyright {
     white-space: normal;
     width: 92%;
     margin: 0 auto;

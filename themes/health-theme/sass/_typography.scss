@@ -160,7 +160,7 @@ h2.blog-article {
   text-transform: lowercase;
 }
 
-h3.subtitle {
+.subtitle {
   margin-top: 1rem;
   font-family: $font__accent;
   font-size: 25px;
@@ -195,7 +195,7 @@ h4,
   margin: 0 0 4px 0;
 }
 
-.h4-style {
+.show-more {
   color: $color__info;
   border-bottom: 1px solid $color__info;
 }
@@ -204,7 +204,8 @@ h4,
   color: $color__primary;
 }
 
-h5 {
+h5,
+.h5-style {
   font-family: $font__pre;
   color: $color__dark;
   font-weight: $font__weight-bold;
@@ -277,14 +278,14 @@ p.blog-excerpt {
   }
 }
 
-p.footer-title {
+.footer-title {
   font-family: $font__accent;
   font-weight: 600;
   color: $color__light;
   font-size: 25px;
   line-height: 31px;
   margin-bottom: 0;
-
+  padding-top: 1.5em;
   @include bp($mobile__bp) {
     line-height: 31px;
   }
@@ -338,18 +339,18 @@ p.footer-title {
   }
   #instagram {
     width: 2rem;
-    padding: 0 0 1px 9px;
+    padding: 0 0 0.6px 9px;
   }
   a,
   a:visited {
     color: $color__light;
 
     &:hover {
-      color: $color__info-invert;
+      color: $color__success;
 
       svg,
       .social-icon {
-        fill: $color__info-invert;
+        fill: $color__success-invert;
       }
     }
 
@@ -379,7 +380,7 @@ p.footer-title {
   text-align: center;
 
   &:hover {
-    color: $color__primary;
+    color: $color__info;
   }
 }
 

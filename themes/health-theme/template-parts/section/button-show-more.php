@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="has-text-centered mb-6">
-  <a class="h4-style is-uppercase" id="loadMore" class="text-btn is-uppercase" href="#" onClick="return false;">show
+<div data-aos="fade-up" class="has-text-centered mb-6">
+  <a class="show-more text-btn is-uppercase" id="loadMore" href="#" onClick="return false;">show
     more</a>
 </div>

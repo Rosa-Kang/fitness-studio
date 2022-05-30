@@ -48,6 +48,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  color: $color__info-invert;
 }
 
 abbr[title] {
@@ -212,4 +213,25 @@ table {
 td,
 th {
   padding: 0;
+}
+
+ul.sub-menu li.current-menu-item > a,
+ul#mobile-menu li.current-menu-item > a,
+ul#mobile-menu li.current_page_parent > a,
+ul#primary-menu li.current_page_parent > a,
+ul#primary-menu li.current-menu-item > a {
+  color: $color__success-invert !important;
+  @include bp(desktop-1024) {
+    &:after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      bottom: -6px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 13px;
+      background: $color__success-invert;
+    }
+  }
 }

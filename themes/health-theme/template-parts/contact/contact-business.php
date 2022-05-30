@@ -26,19 +26,21 @@ $map = get_field('google_maps_embed_link', $post_id);
       <div class="studio-address column is-half">
         <div class="py-6">
           <!-- Studio Address -->
-          <h4 class="is-uppercase">Studio Location</h4>
-          <h5 class="is-capitalized pt-5">Address</h5>
-          <p><?php echo $address ?> <br> <?php echo $city . " " . $province . " " . $postal; ?></p>
-          <h5 class="is-capitalized">Phone</h5>
-          <p href="tel:<?php echo $phone; ?>">
+          <h2 class="h4-style is-uppercase">Studio Location</h2>
+          <h3 class="h5-style is-capitalized pt-5">Address</h3>
+          <a
+            href="https://www.google.com/maps/search/123+Somewhere+Street+Vancouver+BC+A1A+A1A/@49.2663479,-123.2550318,10z/data=!3m1!4b1"><?php echo $address ?>
+            <br> <?php echo $city . " " . $province . " " . $postal; ?></a>
+          <h3 class="h5-style is-capitalized mt-3">Phone</h3>
+          <a href="tel:<?php echo $phone; ?>">
             <?php echo $phone; ?>
-          </p>
-          <h5 class="is-capitalized">Email</h5>
+          </a>
+          <h3 class="h5-style is-capitalized mt-3">Email</h3>
           <a href="mailto:<?php echo $email; ?>" target="_blank" rel="noopener noreferrer"><?php echo $email; ?></a>
         </div>
         <div class="studio-info">
           <!-- Studio Hours -->
-          <h4 class="h4-contact is-uppercase">Studio Hours</h4>
+          <h2 class="h4-style h4-contact is-uppercase">Studio Hours</h2>
           <ul>
             <?php
             // Check rows exists.

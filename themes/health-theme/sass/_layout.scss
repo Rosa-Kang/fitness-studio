@@ -11,12 +11,12 @@ li#menu-item-580 a {
   font-weight: $font__weight-semibold !important;
 }
 
-li#menu-item-580 a::after {
-  content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20id%3D%22Icon%5fmaterial-local-grocery-store%22%20data-name%3D%22Icon%20material-local-grocery-store%22%20d%3D%22M6.9%2C17.4a1.8%2C1.8%2C0%2C1%2C0%2C1.8%2C1.8A1.8%2C1.8%2C0%2C0%2C0%2C6.9%2C17.4ZM1.5%2C3V4.8H3.3l3.24%2C6.831-1.215%2C2.2A1.74%2C1.74%2C0%2C0%2C0%2C5.1%2C14.7a1.805%2C1.805%2C0%2C0%2C0%2C1.8%2C1.8H17.7V14.7H7.278a.223.223%2C0%2C0%2C1-.225-.225l.027-.108L7.89%2C12.9h6.7a1.791%2C1.791%2C0%2C0%2C0%2C1.575-.927l3.222-5.841A.879.879%2C0%2C0%2C0%2C19.5%2C5.7a.9.9%2C0%2C0%2C0-.9-.9H5.289L4.443%2C3ZM15.9%2C17.4a1.8%2C1.8%2C0%2C1%2C0%2C1.8%2C1.8A1.8%2C1.8%2C0%2C0%2C0%2C15.9%2C17.4Z%22%20transform%3D%22translate%28-1.5%20-3%29%22%20fill%3D%22%232c3638%22%2F%3E%0A%3C%2Fsvg%3E');
-  display: inline-block;
-  width: 26px;
-  padding-left: 5px;
-}
+// li#menu-item-580 a::after {
+//   content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20id%3D%22Icon%5fmaterial-local-grocery-store%22%20data-name%3D%22Icon%20material-local-grocery-store%22%20d%3D%22M6.9%2C17.4a1.8%2C1.8%2C0%2C1%2C0%2C1.8%2C1.8A1.8%2C1.8%2C0%2C0%2C0%2C6.9%2C17.4ZM1.5%2C3V4.8H3.3l3.24%2C6.831-1.215%2C2.2A1.74%2C1.74%2C0%2C0%2C0%2C5.1%2C14.7a1.805%2C1.805%2C0%2C0%2C0%2C1.8%2C1.8H17.7V14.7H7.278a.223.223%2C0%2C0%2C1-.225-.225l.027-.108L7.89%2C12.9h6.7a1.791%2C1.791%2C0%2C0%2C0%2C1.575-.927l3.222-5.841A.879.879%2C0%2C0%2C0%2C19.5%2C5.7a.9.9%2C0%2C0%2C0-.9-.9H5.289L4.443%2C3ZM15.9%2C17.4a1.8%2C1.8%2C0%2C1%2C0%2C1.8%2C1.8A1.8%2C1.8%2C0%2C0%2C0%2C15.9%2C17.4Z%22%20transform%3D%22translate%28-1.5%20-3%29%22%20fill%3D%22%232c3638%22%2F%3E%0A%3C%2Fsvg%3E');
+//   display: inline-block;
+//   width: 26px;
+//   padding-left: 5px;
+// }
 
 // Backgrounds (use Bulma has-background-color) --------------------
 .bg-light {
@@ -40,7 +40,8 @@ li#menu-item-580 a::after {
     color: $color__light-bis;
   }
   h4,
-  p {
+  p,
+  .h4-style {
     color: $color__light;
   }
 }
@@ -123,8 +124,11 @@ ul.list-style-none {
 
 // FAQ Accordion -----------------------
 .schema-faq-section {
-  background-color: $color__background-pre;
   color: $color__primary-dark;
+}
+
+.schema-faq {
+  background-color: $color__background-pre;
   &:hover {
     background: $color__success;
   }

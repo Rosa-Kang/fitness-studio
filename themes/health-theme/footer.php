@@ -13,7 +13,7 @@
   <div class="container is-vcentered">
     <div class="column is-flex-tablet">
       <div class="column has-text-centered-mobile">
-        <p class="footer-title is-capitalized">Subscribe To Our Newsletter</p>
+        <h2 class="footer-title is-capitalized">Subscribe To Our Newsletter</h2>
         <form class="has-background-primary mt-4" action="#">
           <input class="placeholder mb-4" type="text" placeholder="Name">
           <input class="placeholder mb-5" type="email" placeholder="Email">
@@ -28,15 +28,14 @@
         <div class="column">
           <?php wp_nav_menu(array('menu' => 'Right Footer Menu')); ?>
           <div class="ml-4 footer-contact-wrapper">
-            <?php get_template_part('template-parts/icon/icons-social'); ?>
+            <?php get_template_part('assets/icon/icons-social'); ?>
           </div>
         </div>
       </div>
     </div>
     <div class="column copyright has-text-centered px-0">
-      <p>Privacy policy</p>
-      <p><a href="privacy-policy" target="_blank">© 2021 Jane’s Pharmacy. All rights reserved. Website designed by
-          whitecanvasdesign.ca</a></p>
+      <a href="privacy-policy">Privacy policy</a>
+      <p>All rights reserved. Website designed by <a href="https://whitecanvasdesign.ca" target="_blank">whitecanvasdesign.ca</a></p>
     </div>
   </div>
 </footer>

@@ -55,7 +55,7 @@
           <div class="dimmed"></div>
 
           <div id="popout" class="popout-menu-wrapper">
-            <div class="popout-menu py-4 px-5">
+            <div class="popout-menu py-6 px-5">
               <?php wp_nav_menu(array('theme_location' => 'mobile-menu', 'menu_id' => 'mobile-menu', 'container-class' => 'mobile-menu-container')); ?>
             </div>
           </div>

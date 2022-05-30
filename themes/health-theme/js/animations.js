@@ -10,7 +10,6 @@
     // Start of Popout Menu -------------------------
     $('#menu-bars').click(function () {
       $(this).toggleClass('toggled');
-
       if ($(this).hasClass('toggled')) {
         $(this).addClass('change');
         $('#popout').addClass('show');
@@ -29,6 +28,19 @@
         $('#menu-bars').removeClass('change');
       }
     });
+
+    $('.mobile-menu-btn').click(function () {
+      // Display submenu
+      $(this).prev('sub-menu').css('left', 'auto');
+    });
+
+    $('.menu')
+      .find('.menu-item-has-children')
+      .after()
+      .click(function () {
+        $(this).toggleClass('clicked');
+        $(this).children('ul').toggleClass('open');
+      });
     // End of Popout Menu -----------------------
 
     // Start of Animate on Scroll ---------------------
@@ -43,7 +55,7 @@
 
     AOS.init({
       duration: 1300,
-      once: false,
+      once: true,
       mirror: true,
     });
 

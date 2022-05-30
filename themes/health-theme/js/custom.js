@@ -24,9 +24,9 @@
     // End of Auto Add Rel to External Links ----------------
 
     // Start of FAQ Accordion --------------------
+    $('.schema-faq').addClass('my-5');
     $('.schema-faq-answer').css('display', 'none');
-    $('.schema-faq-question').addClass('faq-closed');
-
+    $('.schema-faq-question').addClass('py-5 faq-closed');
     $('.schema-faq-question').click(function () {
       if ($(this).next().is(':visible')) {
         $(this).next().slideUp();
@@ -37,6 +37,8 @@
         $(this).removeClass('faq-closed');
         $(this).next().slideDown();
         $(this).addClass('faq-opened');
+        $('.schema-faq-question').not(this).removeClass('faq-opened');
+        $('.schema-faq-question').not(this).addClass('faq-closed');
       }
     }); // End of FAQ Accordion ----------------
   }); // End of Doc Ready -------------------
@@ -50,7 +52,7 @@
     e.preventDefault();
     $('article:hidden').slice(0, 4).show();
     if ($('article:hidden').length === 0) {
-      $('#loadMore').replaceWith("<p class='is-uppercase'>no more</p>");
+      $('#loadMore').replaceWith('<p class="is-uppercase">no more</p>');
     }
   });
 
